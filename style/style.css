@@ -4,6 +4,7 @@
 
 body {
     font-family: Helvetica, sans-serif;
+    background-color: lightgrey;
 }
 
 h1{
@@ -13,16 +14,52 @@ h1{
     margin-bottom: 20px;
 }
 
-ul {
-    margin: 0px 0px 10px 40px;
+.menu {
+    padding: 10px;
+    border: 5px solid orangered;
+    border-radius: 4px;
+    list-style-type: none;
+    font-weight: bold;
+    background-color: beige;
+    text-align: center;
+    width: 610px;
+    margin: auto;
 }
 
-li {
-    margin-bottom: 5px;
+.lasagna,
+.crepes,
+.potatoes {
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    padding: 90px 0px;
+    font-size: 17px;
 }
 
-a {
+.lasagna {
+    background-image: url("https://www.allrecipes.com/thmb/tmn84mKYrBbVEsq_k-uE-6N5T3g=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/JF_11729_AmericanLasagna_3x2_14588-bbd9dd7e466449f992de700eb7026b16.jpg");
+}
+
+.crepes {
+    background-image: url("https://www.allrecipes.com/thmb/TH3aAKNqug7AZEVobVMcrFLP_84=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8167618-bc270b42467d491e8be7102b4700e691.jpg");
+}
+
+.potatoes {
+    background-image: url("https://www.allrecipes.com/thmb/JMkfc1WFQiiKmTzvz98IXhlOMsg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/24771-basic-mashed-potatoes-mfs321-158e1626bfeb48daadb4f25d737ffee91-912ba4ee2c3c40a1837a5690971cc554.jpg");
+}
+
+ul a {
     color: black;
+    text-decoration: none;
+    background-color: rgba(245, 245, 220, 0.70);
+}
+
+a:hover {
+    color: orangered;
 }
 
 .home {
@@ -30,14 +67,11 @@ a {
     text-align: center;
 }
 
-a:hover {
-    color: orangered;
-}
-
 img {
     display: block;
     margin: auto;
     margin-bottom: 20px;
+    border: 2px solid black;
 }
 
 h2 {
